@@ -26,6 +26,16 @@ def multiply(a, b):
     return a * b
 
 
+def power(a, b):
+    """Return a raised to the power of b."""
+    return a ** b
+
+
+def percentage(value, percent):
+    """Return the percentage amount of a value."""
+    return value * (percent / 100)
+
+
 def divide(a, b):
     """Return the division of two numbers."""
 
