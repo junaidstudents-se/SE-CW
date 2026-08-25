@@ -13,7 +13,7 @@ This program demonstrates:
 
 def add(a, b):
     """Return the sum of two numbers."""
-    return a - b
+    return a + b
 
 
 def subtract(a, b):
@@ -39,8 +39,8 @@ def calculator():
     """Run the calculator application."""
 
     print("===================================")
-    print("       SOFTWARE ENGINEERING")
-    print("          SIMPLE CALCULATOR")
+    print("       SOFTWARE ENGINEERING Syed Muhammad Junaid Hassan")
+    print("          SIMPLE CALCULATOR 15741")
     print("===================================")
 
     while True:
