@@ -7,10 +7,10 @@ of the calculator functions.
 
 import pytest
 
-from Calculator import add
-from Calculator import subtract
-from Calculator import multiply
-from Calculator import divide
+from calculator import add
+from calculator import subtract
+from calculator import multiply
+from calculator import divide
 
 
 def test_add():
