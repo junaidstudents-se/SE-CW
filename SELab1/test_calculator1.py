@@ -3,6 +3,8 @@ import pytest
 from calculator import add
 from calculator import subtract
 from calculator import multiply
+from calculator import power
+from calculator import percentage
 from calculator import divide
 
 
@@ -20,6 +22,30 @@ def test_subtract():
 
 def test_multiply():
     assert multiply(10, 5) == 50
+
+
+def test_power():
+    assert power(2, 3) == 8
+
+
+def test_power_zero_exponent():
+    assert power(5, 0) == 1
+
+
+def test_power_negative_exponent():
+    assert power(2, -2) == 0.25
+
+
+def test_percentage():
+    assert percentage(200, 10) == 20
+
+
+def test_percentage_zero_percent():
+    assert percentage(500, 0) == 0
+
+
+def test_percentage_negative_percent():
+    assert percentage(200, -10) == -20
 
 
 def test_divide():
