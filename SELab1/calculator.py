@@ -60,16 +60,18 @@ def calculator():
         print("2. Subtraction")
         print("3. Multiplication")
         print("4. Division")
-        print("5. Exit")
+        print("5. Power")
+        print("6. Percentage")
+        print("7. Exit")
 
-        choice = input("\nEnter your choice (1-5): ")
+        choice = input("\nEnter your choice (1-7): ")
 
-        if choice == "5":
+        if choice == "7":
             print("\nThank you for using the calculator.")
             break
 
-        if choice not in ["1", "2", "3", "4"]:
-            print("Invalid choice. Please select 1-5.")
+        if choice not in ["1", "2", "3", "4", "5", "6"]:
+            print("Invalid choice. Please select 1-7.")
             continue
 
         try:
@@ -92,6 +94,12 @@ def calculator():
                 except ValueError as error:
                     print("Error:", error)
                     continue
+
+            elif choice == "5":
+                result = power(num1, num2)
+
+            elif choice == "6":
+                result = percentage(num1, num2)
 
             print("\nResult:", result)
 
