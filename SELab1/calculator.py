@@ -143,10 +143,16 @@ def factorial(a: Union[int, float]) -> int:
     Raises:
         ValueError: If a is not a non-negative integer
     """
-    if not isinstance(a, int) or a < 0:
+    # Check if a is a whole number
+    if isinstance(a, float) and not a.is_integer():
         raise ValueError("Factorial requires a non-negative integer.")
 
-    return math.factorial(a)
+    a_int = int(a)
+
+    if a_int < 0:
+        raise ValueError("Factorial requires a non-negative integer.")
+
+    return math.factorial(a_int)
 
 
 def calculator() -> None:
