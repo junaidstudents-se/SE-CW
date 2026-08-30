@@ -39,8 +39,8 @@ def calculator():
     """Run the calculator application."""
 
     print("===================================")
-    print("       SOFTWARE ENGINEERING Syed Muhammad Junaid Hassan")
-    print("          SIMPLE CALCULATOR 15741")
+    print("       SOFTWARE ENGINEERING Abdullah Kurd")
+    print("          SIMPLE CALCULATOR 70227")
     print("===================================")
 
     while True:
